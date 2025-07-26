@@ -18,7 +18,7 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:3000",
+        "*",
         "https://clever-ganache-0ccf87.netlify.app/"
     ],
     allow_credentials=True,
